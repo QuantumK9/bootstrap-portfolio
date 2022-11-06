@@ -12,19 +12,56 @@ p {
 }
 
 /* navigation styles */
+.custom-navbar {
+  position: fixed;
+  width: 100%;
+  background: url("../images/transparency.png") !important ;
+  /* background-color: transparent  ; */
+  background-size: cover;
+  z-index: 10;
+}
+
 .navbar-brand {
   padding-right: 15px;
+  color: cyan !important;
 }
 
 .navbar-nav {
   margin-left: auto;
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .nav-item {
   margin: 0 15px;
+  color: white !important;
 }
 
+.nav-item:hover {
+  color: cyan !important;
+}
+
+
+/* hero section styles  */
+.jumbotron {
+  background-image: url("../images/linges-design.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-jumbo {
+  width: 70%;
+  min-width:500px;
+  max-width: 700px;
+  color: white;
+  text-align: center;
+  background-color: black;
+  opacity: 0.9;
+  padding: 25px 20px;
+}
 
 /* footer styles  */
 footer {
