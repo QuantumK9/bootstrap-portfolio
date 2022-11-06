@@ -15,6 +15,10 @@ h6 {
   font-family: 'Anton', sans-serif;
 }
 
+ul {
+  margin: 0;
+}
+
 p {
   font-family: 'Jura', sans-serif;
 }
@@ -95,9 +99,23 @@ p {
 .page-wrapper {
   background-color: var(--backgr);
   padding-top:32px;
+  padding-left: 10px;
+  padding-right: 10px;
+
 }
 
 /* footer styles  */
 footer {
-  
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 500px;
+  max-width: 100%;
+  min-height: 100px;
+}
+
+.footer span {
+  color: var(--cyan);
 }
