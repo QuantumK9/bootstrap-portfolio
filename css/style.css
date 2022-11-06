@@ -1,3 +1,11 @@
+/* CSS custom properties  */
+:root {
+  --cyan: rgba(255, 166, 0, 0.792);
+  --backgr: rgba(0, 0, 0, 0.821);
+
+}
+/* notes  */
+/* colors: cyan and rgba(0,0,0,0.821) ;  */
 h1,
 h2,
 h3,
@@ -27,8 +35,9 @@ p {
   padding-top: 5px;
   padding-bottom: 5px;
   color: black !important;
-  background-color:cyan;
-  font-size: 24px;
+  background-color: var(--cyan);
+  font-size: 32px;
+  line-height: 1;
   
 }
 
@@ -48,7 +57,7 @@ p {
 }
 
 .nav-item:hover {
-  color: cyan !important;
+  color: var(--cyan) !important;
   opacity: 0.7;
   transition: 0.3s ease-in-out;
 }
@@ -78,12 +87,13 @@ p {
 }
 
 .custom-jumbo h1 {
-  color: cyan;
+  color: var(--cyan);
+  border-bottom: 2px solid var(--cyan);
 }
 
 /* main page section styles */
 .page-wrapper {
-  background-color: rgba(0, 0, 0, 0.821);
+  background-color: var(--backgr);
   padding-top:32px;
 }
 
