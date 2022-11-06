@@ -23,7 +23,18 @@ p {
 
 .navbar-brand {
   padding-right: 15px;
-  color: cyan !important;
+  padding-left:100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: black !important;
+  background-color:cyan;
+  font-size: 24px;
+  
+}
+
+.navbar-brand:hover {
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
 }
 
 .navbar-nav {
@@ -38,6 +49,8 @@ p {
 
 .nav-item:hover {
   color: cyan !important;
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
 }
 
 
@@ -50,6 +63,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0;
 }
 
 .custom-jumbo {
@@ -61,6 +75,16 @@ p {
   background-color: black;
   opacity: 0.9;
   padding: 25px 20px;
+}
+
+.custom-jumbo h1 {
+  color: cyan;
+}
+
+/* main page section styles */
+.page-wrapper {
+  background-color: rgba(0, 0, 0, 0.821);
+  padding-top:32px;
 }
 
 /* footer styles  */
