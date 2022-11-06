@@ -19,8 +19,17 @@ ul {
   margin: 0;
 }
 
+li {
+   list-style: none;   
+}
+
 p {
   font-family: 'Jura', sans-serif;
+}
+
+body {
+  background-color: var(--backgr);
+  color: var(--cyan)
 }
 
 /* navigation styles */
@@ -97,13 +106,22 @@ p {
 
 /* main page section styles */
 .page-wrapper {
-  background-color: var(--backgr);
+  /* background-color: var(--backgr); */
   padding-top:32px;
   padding-left: 10px;
   padding-right: 10px;
 
 }
 
+/* about-contact section styles  */
+
+.about-contact {
+  margin: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
 /* footer styles  */
 footer {
   background-color: black;
