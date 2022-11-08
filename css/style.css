@@ -35,11 +35,12 @@ body {
 /* navigation styles */
 .custom-navbar {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   background: url("../images/transparency.png") !important ;
   /* background-color: transparent  ; */
   background-size: cover;
   z-index: 10;
+  overflow: hidden;
 }
 
 .navbar-brand {
@@ -90,13 +91,14 @@ body {
 
 .custom-jumbo {
   width: 70%;
-  min-width:500px;
+  min-width: 320px;
   max-width: 700px;
   color: white;
   text-align: center;
   background-color: black;
   opacity: 0.9;
   padding: 25px 20px;
+  margin: 0 auto;
 }
 
 .custom-jumbo h1 {
@@ -105,13 +107,7 @@ body {
 }
 
 /* main page section styles */
-.page-wrapper {
-  /* background-color: var(--backgr); */
-  padding-top:32px;
-  padding-left: 10px;
-  padding-right: 10px;
 
-}
 
 .work {
   padding-top: 30px;
@@ -131,24 +127,55 @@ body {
 /* about-contact section styles  */
 
 .about-contact {
-  height: 100vh;
+  /* height: 50vw; */
   width: 100%;
+  min-height: min-content;
   background-color: rgb(34, 34, 34);
-  padding: 30px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   color: white;
 }
+
+.contact-text {
+  /* -webkit-box-shadow: 14px 2px 11px 11px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 14px 2px 11px 11px rgba(0, 0, 0, 0.75);
+  box-shadow: 14px 2px 11px 11px rgba(0, 0, 0, 0.75); */
+  -webkit-box-shadow: 10px 2px 11px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 2px 11px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 2px 11px 1px rgba(0, 0, 0, 0.75);
+  border-left: 5px solid orange;
+}
+
+.contact-text:hover {
+  opacity: 0.8;
+  transition: 0.3s ease-in-out;
+}
+
+
+
+
+.contact>h2 {
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 /* footer styles  */
 footer {
   background-color: black;
   color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 500px;
+  min-width: 300px;
   max-width: 100%;
   min-height: 100px;
 }
