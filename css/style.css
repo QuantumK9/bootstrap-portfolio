@@ -113,14 +113,33 @@ body {
 
 }
 
+.work {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.card {}
+
+.card:hover {
+  scale:1.02;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 7px 6px 13px -1px rgba(240, 147, 34, 0.42);
+    -moz-box-shadow: 7px 6px 13px -1px rgba(240, 147, 34, 0.42);
+    box-shadow: 7px 6px 13px -1px rgba(240, 147, 34, 0.42);
+    
+}
 /* about-contact section styles  */
 
 .about-contact {
-  margin: 30px 20px;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(34, 34, 34);
+  padding: 30px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  color: white;
 }
 /* footer styles  */
 footer {
