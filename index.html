@@ -31,12 +31,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#"
+          <a class="nav-item nav-link" href="#about"
             >About <span class="sr-only">(current)</span></a
           >
-          <a class="nav-item nav-link" href="#">Work</a>
-          <a class="nav-item nav-link" href="#">Contact Me</a>
-          <a class="nav-item nav-link" href="#">Resume</a>
+          <a class="nav-item nav-link" href="#work">Work</a>
+          <a class="nav-item nav-link" href="#contact">Contact Me</a>
+          <a class="nav-item nav-link" href="#resume">Resume</a>
         </div>
       </div>
     </nav>
@@ -58,12 +58,9 @@
 
     <!-- work portfolio section  -->
 
-    <!-- <main class="page-wrapper"> -->
-    <!-- about me -->
-
     <!-- portfolio container -->
     <div class="container-fluid work">
-      <h2 class="work-header">Work</h2>
+      <h2 class="work-header" id="work">Work</h2>
       <!-- Row 1 -->
       <div class="row">
         <!-- Card 1  -->
@@ -77,7 +74,6 @@
             <div class="card-body">
               <h5 class="card-title">Surf Report</h5>
               <p class="card-text">Vanilla JS</p>
-              <!-- <a href="">Click me</a> -->
             </div>
           </div>
         </div>
@@ -94,7 +90,6 @@
             <div class="card-body">
               <h5 class="card-title">LED Wall</h5>
               <p class="card-text">React</p>
-              <!-- <a href="">Click me</a> -->
             </div>
           </div>
         </div>
@@ -115,9 +110,7 @@
           </div>
         </div>
         <!-- End of Card 3  -->
-        <!-- </div> -->
 
-        <!-- <div class="row"> -->
         <!-- Card 4  -->
         <div class="card-container col-xs-12 col-sm-6 col-md-6 col-lg-4">
           <div class="card bg-dark text-yellow" id="card4">
@@ -169,10 +162,9 @@
     </div>
 
     <!-- contact -->
-    <!-- maybe add something like a card ?  -->
     <section class="about-contact container-fluid">
       <div class="row contact-text w-100 mt-5 mb-2 mx-auto">
-        <article class="about col-12">
+        <article class="about col-12" id="about">
           <h2 class="pt-3">About Me</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -188,7 +180,7 @@
       </div>
 
       <div class="row contact-text w-100 mt-2 mb-5 mx-auto">
-        <article class="contact col-12">
+        <article class="contact col-12" id="contact">
           <h2 class="pt-3">Contact Me</h2>
           <ul class="contact-links py-3 pl-0 ml-0">
             <li class="contact-link">
@@ -207,7 +199,8 @@
         </article>
       </div>
     </section>
-    <!-- </main> -->
+
+    <!-- footer section  -->
 
     <footer class="footer">
       <p>© Copyright Portfolio. All Rights Reserved</p>

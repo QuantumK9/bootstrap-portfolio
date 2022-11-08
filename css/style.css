@@ -1,11 +1,10 @@
 /* CSS custom properties  */
 :root {
-  --cyan: rgba(255, 166, 0, 0.792);
+  --orange: rgba(255, 166, 0, 0.792);
   --backgr: rgba(0, 0, 0, 0.821);
 
 }
-/* notes  */
-/* colors: cyan and rgba(0,0,0,0.821) ;  */
+
 h1,
 h2,
 h3,
@@ -29,7 +28,7 @@ p {
 
 body {
   background-color: var(--backgr);
-  color: var(--cyan)
+  color: var(--orange)
 }
 
 /* navigation styles */
@@ -49,7 +48,7 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
   color: black !important;
-  background-color: var(--cyan);
+  background-color: var(--orange);
   font-size: 32px;
   line-height: 1;
   
@@ -71,7 +70,7 @@ body {
 }
 
 .nav-item:hover {
-  color: var(--cyan) !important;
+  color: var(--orange) !important;
   opacity: 0.7;
   transition: 0.3s ease-in-out;
 }
@@ -102,8 +101,8 @@ body {
 }
 
 .custom-jumbo h1 {
-  color: var(--cyan);
-  border-bottom: 2px solid var(--cyan);
+  color: var(--orange);
+  border-bottom: 2px solid var(--orange);
 }
 
 /* main page section styles */
@@ -112,6 +111,11 @@ body {
 .work {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.work-header {
+  color: white;
+  padding-bottom: 10px;
 }
 
 .card-container {
@@ -128,14 +132,13 @@ body {
   scale:1.02;
   transition: all 0.3s ease-in-out;
   -webkit-box-shadow: 7px 6px 13px -1px rgba(240, 147, 34, 0.42);
-    -moz-box-shadow: 7px 6px 13px -1px rgba(240, 147, 34, 0.42);
-    box-shadow: 7px 6px 13px -1px rgba(240, 147, 34, 0.42);
+  -moz-box-shadow: 7px 6px 13px -1px rgba(240, 147, 34, 0.42);
+  box-shadow: 7px 6px 13px -1px rgba(240, 147, 34, 0.42);
     
 }
 /* about-contact section styles  */
 
 .about-contact {
-  /* height: 50vw; */
   width: 100%;
   min-height: min-content;
   background-color: rgb(34, 34, 34);
@@ -196,5 +199,5 @@ footer {
 }
 
 .footer span {
-  color: var(--cyan);
+  color: var(--orange);
 }
