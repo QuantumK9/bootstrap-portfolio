@@ -16,7 +16,7 @@
 
   <body>
     <!-- navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
       <a class="navbar-brand" href="#">Iraklis K</a>
       <button
         class="navbar-toggler"
@@ -31,160 +31,141 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#"
+          <a class="nav-item nav-link" href="#about"
             >About <span class="sr-only">(current)</span></a
           >
-          <a class="nav-item nav-link" href="#">Work</a>
-          <a class="nav-item nav-link" href="#">Contact Me</a>
-          <a class="nav-item nav-link" href="#">Resume</a>
+          <a class="nav-item nav-link" href="#work">Work</a>
+          <a class="nav-item nav-link" href="#contact">Contact Me</a>
+          <a class="nav-item nav-link" href="#resume">Resume</a>
         </div>
       </div>
     </nav>
 
-    <!-- <header>
-      <h1 id="logo">Iraklis K</h1>
-      <nav>
-        <a href="#about" id="about-link">About</a>
-        <a href="#work" id="work-link">Work</a>
-        <a href="#contact" id="contact-link">Contact Me</a>
-        <a href="#" id="resume">Resume</a>
-      </nav>
-    </header> -->
-
     <!-- hero banner -->
 
     <div class="jumbotron">
-      <h1 class="display-4">Web Development Solutions</h1>
-      <p class="lead">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
-        quos.
-      </p>
+      <div class="custom-jumbo">
+        <h1 class="display-4">Iraklis K</h1>
+        <h2>Web Development Solutions</h2>
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+          quos.
+        </p>
+      </div>
+
       <!-- <hr class="my-4" /> -->
     </div>
 
     <!-- work portfolio section  -->
 
-    <main class="page-wrapper">
-      <!-- about me -->
-
-      <!-- portfolio container -->
-      <div class="container-fluid">
-        <h2 class="work-header">Work</h2>
-        <!-- Row 1 -->
-        <div class="row">
-          <!-- Card 1  -->
-          <div class="card-container col-sm-12 col-md-4 col-lg-4">
-            <div class="card" id="card1">
-              <img
-                src="./images/02-portfolio-4.jpg"
-                alt="an surfing in ocean"
-                class="card-img-top"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Surf Report</h5>
-                <p class="card-text">Vanilla JS</p>
-                <a href="">Click me</a>
-              </div>
+    <!-- portfolio container -->
+    <div class="container-fluid work">
+      <h2 class="work-header" id="work">Work</h2>
+      <!-- Row 1 -->
+      <div class="row">
+        <!-- Card 1  -->
+        <div class="card-container col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="card bg-dark text-yellow" id="card1">
+            <img
+              src="./images/02-portfolio-4.jpg"
+              alt="an surfing in ocean"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Surf Report</h5>
+              <p class="card-text">Vanilla JS</p>
             </div>
           </div>
-          <!-- End of Card 1 -->
-
-          <!-- Card 2  -->
-          <div class="card-container col-sm-12 col-md-4 col-lg-4">
-            <div class="card" id="card2">
-              <img
-                src="./images/02-portfolio-1.jpg"
-                alt="Wall with LED lamps"
-                class="card-img-top"
-              />
-              <div class="card-body">
-                <h5 class="card-title">LED Wall</h5>
-                <p class="card-text">React</p>
-                <a href="">Click me</a>
-              </div>
-            </div>
-          </div>
-          <!-- End of Card 2  -->
-
-          <!-- Card 3  -->
-          <div class="card-container col-sm-12 col-md-4 col-lg-4">
-            <div class="card" id="card3">
-              <img
-                src="./images/02-portfolio-2.jpg"
-                alt="Laptop with calculator on screen"
-                class="card-img-top"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Calculator</h5>
-                <p class="card-text">Vanilla JS and CSS</p>
-                <a href="">Click me</a>
-              </div>
-            </div>
-          </div>
-          <!-- End of Card 3  -->
         </div>
+        <!-- End of Card 1 -->
 
-        <div class="row">
-          <!-- Card 4  -->
-          <div class="card-container col-sm-12 col-md-4 col-lg-4">
-            <div class="card" id="card4">
-              <img
-                src="./images/pokemon-app.jpg"
-                alt="Pokemon character"
-                class="card-img-top"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Pokedex Card Game</h5>
-                <p class="card-text">React and APIs</p>
-                <a href="">Click me</a>
-              </div>
+        <!-- Card 2  -->
+        <div class="card-container col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="card bg-dark text-yellow" id="card2">
+            <img
+              src="./images/02-portfolio-1.jpg"
+              alt="Wall with LED lamps"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">LED Wall</h5>
+              <p class="card-text">React</p>
             </div>
           </div>
-          <!-- End of Card 4  -->
-
-          <!-- Card 5  -->
-          <div class="card-container col-sm-12 col-md-4 col-lg-4">
-            <div class="card" id="card5">
-              <img
-                src="./images/game-app.jpg"
-                alt="A brick wall with video game character"
-                class="card-img-top"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Lights Out Game</h5>
-                <p class="card-text">React</p>
-                <a href="">Click me</a>
-              </div>
-            </div>
-          </div>
-          <!-- End of Card 5  -->
-
-          <!-- Card 6  -->
-          <div class="card-container col-sm-12 col-md-4 col-lg-4">
-            <div class="card" id="card6">
-              <img
-                src="./images/weather-app.jpg"
-                alt="Storm over sea"
-                class="card-img-top"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Weather app</h5>
-                <p class="card-text">React and APIs</p>
-                <a href="">Click me</a>
-              </div>
-            </div>
-          </div>
-          <!-- End of Card 6  -->
         </div>
+        <!-- End of Card 2  -->
+
+        <!-- Card 3  -->
+        <div class="card-container col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="card bg-dark text-yellow" id="card3">
+            <img
+              src="./images/02-portfolio-2.jpg"
+              alt="Laptop with calculator on screen"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Calculator</h5>
+              <p class="card-text">Vanilla JS and CSS</p>
+            </div>
+          </div>
+        </div>
+        <!-- End of Card 3  -->
+
+        <!-- Card 4  -->
+        <div class="card-container col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="card bg-dark text-yellow" id="card4">
+            <img
+              src="./images/pokemon-app.jpg"
+              alt="Pokemon character"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pokedex Card Game</h5>
+              <p class="card-text">React and APIs</p>
+            </div>
+          </div>
+        </div>
+        <!-- End of Card 4  -->
+
+        <!-- Card 5  -->
+        <div class="card-container col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="card bg-dark text-yellow" id="card5">
+            <img
+              src="./images/game-app.jpg"
+              alt="A brick wall with video game character"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lights Out Game</h5>
+              <p class="card-text">React</p>
+            </div>
+          </div>
+        </div>
+        <!-- End of Card 5  -->
+
+        <!-- Card 6  -->
+        <div class="card-container col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="card bg-dark text-yellow" id="card6">
+            <img
+              src="./images/weather-app.jpg"
+              alt="Storm over sea"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Weather app</h5>
+              <p class="card-text">React and APIs</p>
+            </div>
+          </div>
+        </div>
+        <!-- End of Card 6  -->
       </div>
+    </div>
 
-      <section class="page-section" id="about"></section>
-
-      <!-- contact -->
-      <!-- maybe add something like a card ?  -->
-      <section class="page-section contact-about" id="contact">
-        <article class="about-me">
-          <h2>About Me</h2>
+    <!-- contact -->
+    <section class="about-contact container-fluid">
+      <div class="row contact-text w-100 mt-5 mb-2 mx-auto">
+        <article class="about col-12" id="about">
+          <h2 class="pt-3">About Me</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Consectetur, harum, velit placeat officia nobis sit laboriosam
@@ -196,27 +177,37 @@
             voluptates quo veritatis!
           </p>
         </article>
-        <!-- maybe add some icons instead of text or li s  -->
-        <h2>Contact Me</h2>
-        <ul class="contact-links">
-          <li class="contact-link">
-            <a href="#" target="_blank">Telephone </a>
-          </li>
-          <li class="contact-link">
-            <a href="#" target="_blank">Email</a>
-          </li>
-          <li class="contact-link">
-            <a href="#" target="_blank">Github</a>
-          </li>
-          <li class="contact-link">
-            <a href="#" target="_blank">Twitter</a>
-          </li>
-        </ul>
-      </section>
-    </main>
+      </div>
+
+      <div class="row contact-text w-100 mt-2 mb-5 mx-auto">
+        <article class="contact col-12" id="contact">
+          <h2 class="pt-3">Contact Me</h2>
+          <ul class="contact-links py-3 pl-0 ml-0">
+            <li class="contact-link">
+              <a href="#" target="_blank">Telephone </a>
+            </li>
+            <li class="contact-link">
+              <a href="#" target="_blank">Email</a>
+            </li>
+            <li class="contact-link">
+              <a href="#" target="_blank">Github</a>
+            </li>
+            <li class="contact-link">
+              <a href="#" target="_blank">Twitter</a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- footer section  -->
 
     <footer class="footer">
-      © Copyright PhotoFolio. All Rights Reserved Designed by Iraklis K
+      <p>© Copyright Portfolio. All Rights Reserved</p>
+      <p>
+        Designed by
+        <span>Quantum K</span>
+      </p>
     </footer>
     <!-- Bootstrap JS scripts below  -->
     <script
